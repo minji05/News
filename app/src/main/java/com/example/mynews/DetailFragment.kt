@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 
 class DetailFragment : Fragment() {
@@ -16,10 +17,13 @@ class DetailFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_detail, container, false)
         val articleTxt: TextView = view.findViewById(R.id.articleTxt)
+        val imageView: ImageView = view.findViewById(R.id.articleimg)
 
         arguments?.let {
             val articleDetail = it.getString("articleDetail")
             articleTxt.text = articleDetail
+            val imgDetail = it.getInt("imgDetail")
+            imageView.setImageResource(imgDetail)
         }
 
         return view
