@@ -6,16 +6,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/articleimg"
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        app:srcCompat="@drawable/sample1" />
+
     <TextView
         android:id="@+id/articleTxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:padding="16dp" />
-
-    <ImageView
-        android:id="@+id/articleimg"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/sample1" />
+        android:padding="16dp"
+        android:textSize="18sp" />
 </LinearLayout>
